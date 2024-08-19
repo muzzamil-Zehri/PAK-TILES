@@ -1,0 +1,59 @@
+/* Styles for the footer container */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+/* Styles for each footer section */
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Styles for footer section headings */
+.footer-section {
+    color: rgb(5, 5, 5);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Styles for paragraph text in the footer */
+.footer-description {
+    color: rgb(235, 235, 235);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Styles for links in the footer */
+a {
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+/* Responsive Layout for screens up to 768px */
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+    .footer-section {
+        flex: 1 0 100%; /* Each section takes full width */
+        text-align: center; /* Center text for better readability */
+    }
+}
+
+/* Responsive Layout for screens up to 480px */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px; /* Smaller heading font size */
+    }
+    p {
+        font-size: 12px; /* Smaller paragraph font size */
+    }
+}

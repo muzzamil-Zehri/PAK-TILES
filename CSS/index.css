@@ -1,0 +1,154 @@
+/* Navigation bar styles */
+nav {
+    color: white;
+    padding: 10px 20px; /* Padding around the navigation bar */
+    display: flex; /* Flexbox layout for alignment */
+    justify-content: space-between; /* Space between logo and menu items */
+    align-items: center; /* Center items vertically */
+}
+
+nav .logo img {
+    height: 50px; /* Logo image height */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display menu items inline */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between menu items */
+}
+
+nav ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px 10px; /* Padding inside links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #575757; /* Background color on hover or active link */
+    border-radius: 4px; /* Rounded corners for links */
+}
+
+/* Search bar styles */
+.search-bar {
+    display: none; /* Hide search bar by default */
+    align-items: center; /* Center items vertically */
+    margin: 10px; /* Margin around search bar */
+}
+
+#searchBar input {
+    width: 85%; /* Width of the input field */
+    padding: 10px; /* Padding inside the input field */
+    margin-left: 7%; /* Margin to the left of the input field */
+    border-radius: 200px; /* Rounded corners for the input field */
+}
+
+#closeSearch {
+    padding: 5px 10px; /* Padding inside the close button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 20px; /* Margin to the left of the close button */
+}
+
+.search-bar button {
+    background-color: #575757; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.search-bar button:hover {
+    background-color: #777676; /* Button background color on hover */
+}
+
+/* Show search bar when the class is added */
+.show-search-bar {
+    display: block; /* Display the search bar */
+}
+
+/* Custom styles for carousel */
+.carousel {
+    width: 100%; /* Full width carousel */
+    margin-bottom: 20px; /* Margin below the carousel */
+}
+
+.carousel-item img {
+    height: 650px; /* Image height */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Arrow background color */
+    border-radius: 50%; /* Rounded arrows */
+    padding: 10px; /* Arrow size */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%; /* Center arrows vertically */
+    transform: translateY(-50%); /* Center arrows precisely */
+}
+
+.carousel-indicators {
+    bottom: 10px; /* Position indicators from bottom */
+}
+
+.carousel-indicators button {
+    width: 12px; /* Indicator size */
+    height: 12px;
+    border-radius: 50%; /* Round shape */
+    border: none; /* Remove border */
+    background-color: rgba(0, 0, 0, 0.5); /* Indicator color */
+    margin: 0 5px; /* Space between indicators */
+}
+
+.carousel-indicators .active {
+    background-color: #007bff; /* Active indicator color */
+}
+
+/* Product section styles */
+#product {
+    display: grid; /* Grid layout for products */
+    grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+    grid-gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the product section */
+    width: 100vw; /* Full width */
+    text-align: center; /* Center text */
+    font-size: large; /* Font size */
+}
+
+#heading {
+    text-align: center; /* Center align heading */
+    font-size: xx-large; /* Font size for heading */
+}
+
+/* View all products button container */
+#VIEW-ALL-PRODUCT {
+    display: flex; /* Flexbox layout for centering */
+    justify-content: center; /* Center content */
+}
+
+/* View all products button styles */
+#VIEW-ALL-PRODUCT-1 {
+    background-color: rgb(102, 102, 223); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 20px; /* Margin around button */
+    font-size: large; /* Font size */
+    font-weight: bold; /* Bold font */
+}
+
+#VIEW-ALL-PRODUCT-1:hover {
+    background-color: rgb(0, 0, 0); /* Background color on hover */
+}

@@ -1,0 +1,21 @@
+/* Global styles for all elements */
+* {
+    font-family: Arial, sans-serif; /* Default font family */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styles for the body element */
+body {
+    background-color: #dedef0; /* Set background color for the entire page */
+}
+
+/* Styles for the navigation bar */
+nav {
+    background-color: #7f7f88; /* Set background color for the navigation bar */
+}
+
+/* Styles for the footer container */
+.footer-container {
+    background-color: #7f7f88; /* Set background color for the footer container */
+}

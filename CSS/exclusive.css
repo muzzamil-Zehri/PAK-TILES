@@ -1,0 +1,57 @@
+
+
+/* Heading Section */
+#heading {
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50px;
+    background-color: #007bff;
+    margin: 30px auto; /* Center the heading horizontally */
+    width: 80%;
+    padding: 20px; /* Add padding for better visual */
+}
+
+/* Image Grid */
+.image-grid {
+    width: 77%;
+    margin-left: 11%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 120px; /* Adjust the gap between images */
+}
+
+.product-item {
+    text-align: center; /* Center aligns the image and name */
+}
+
+.product-name {
+    font-size: 14px; /* Adjust font size */
+    margin-top: 5px; /* Adjust spacing between image and name */
+}
+
+.image-grid img {
+    max-width: 100%; /* Ensure images resize responsively */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional Styles */
+#img {
+    width: 20px;
+    margin-top: 30px;
+}
+
+#div1 {
+    font-weight: bold;
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    #heading {
+        font-size: 24px;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust columns for smaller screens */
+        grid-gap: 10px; /* Reduce gap between images */
+    }
+}

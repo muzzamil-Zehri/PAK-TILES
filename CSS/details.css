@@ -1,0 +1,77 @@
+/* Product Container */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 100%; /* Ensure container is responsive */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    overflow: hidden; /* Hide overflow to prevent horizontal scrolling */
+}
+
+/* Product Information */
+.product-info {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px; /* Add padding to separate content from border */
+}
+
+/* Product Image */
+.product-image {
+    width: 100%; /* Make image responsive within its container */
+    max-width: 300px; /* Limit maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+/* Details Section */
+.details {
+    margin-left: 20px;
+    flex: 1; /* Allow details section to grow and take remaining space */
+}
+
+/* Product Name */
+.product-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Product Categories */
+.product-categories {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666; /* Adjust color for categories */
+}
+
+/* Product Specifications */
+.product-specs {
+    margin-top: 20px; /* Add space above specifications */
+}
+
+/* Individual Specification */
+.spec {
+    margin-bottom: 10px;
+}
+
+.spec-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.spec-value {
+    color: #888; /* Adjust color for specification values */
+    font-size: 14px;
+}
+
+/* Apply border to every <p> element within .product-info and .product-specs */
+.product-info p,
+.product-specs p {
+    border-bottom: 1px solid #ccc; /* Add bottom border to separate paragraphs */
+    padding: 8px 0; /* Add padding above and below each paragraph */
+}
+
+.spec-value:last-child {
+    margin-bottom: 0; /* Remove bottom margin from the last spec-value */
+}
